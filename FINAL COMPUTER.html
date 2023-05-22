@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BUILD YOUR RIG</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.table-container {
+            border: 1px solid black;
+        }
+
+        .table-container table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table-container table, .table-container th, .table-container td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+		
+.container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .image {
+            flex: 3;
+            margin-right: 0px;
+        }
+
+        .description {
+            flex: 3;
+        }
+		
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(front.png);
+	background-color: #2f313f;
+}
+
+header {
+    background-color: #191B2A;
+    color: #CCCCCC;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #26293B;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #cccccc;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #cccccc;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #cccccc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #D5D8DC;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #26293B;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+    <header>
+        <img src="build.png" alt="title">
+    </header>
+	<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Components
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#case">PC Case</a>
+      <a href="#motherboard">Motherboard</a>
+      <a href="#cpu">CPU</a>
+	  <a href="#ram">RAM</a>
+      <a href="#gpu">Graphics Card</a>
+	  <a href="#hdd">Hard Drive & SSD</a>
+      <a href="#psu">Power Supply Unit(PSU)</a>
+      <a href="#monitor">Monitor</a>
+	  <a href="#mouse">Mouse</a>
+      <a href="#keyboard">Keyboard</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Common Peripheral Components for Computers
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#graphics-tablet">Graphics Tablet</a>
+	  <a href="#speakers">Speakers</a>
+	  <a href="#webcam">Webcam</a>
+	  <a href="#printer">Printer</a>
+	  </div>
+	</div>
+  <a href="#maintenance-tips">Computer Maintainance Tips</a>
+  <a href="#troubleshooting-tips">Troubleshooting Tips</a>
+  <a href="#product-recommendations">Product Recommendations</a>
+  <a href="#contact">Contact Us</a>
+</div>
+	<main>
+        <section id="case">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Computer Case</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="case.png" alt="Computer Case">
+                            </div>
+                            <div class="description">
+                                <strong>A computer case, also known as a chassis, is the enclosure that houses and protects the computer components. It provides structural support and helps in cooling the components.</strong>
+                                <br><br>
+                                <strong>List of computer case sizes (known as form factor):</strong>
+                                <ul>
+                                    <li><strong>Very small form factor:</strong> Supports Mini ITX motherboards</li>
+                                    <li><strong>Small form factor:</strong> Supports micro ATX motherboards.</li>
+                                    <li><strong>Standard form factor:</strong> Supports standard ATX motherboards.</li>
+                                    <li><strong>Larger form factors:</strong> Supports ATX and XL-ATX motherboards.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+		
+		<section id="motherboard">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Motherboard</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="mobo.png" alt="Motherboard">
+                            </div>
+                            <div class="description">
+                                <strong>The motherboard is the main circuit board of the computer. It provides a platform for all the other components to connect andcommunicate with each other.</strong>
+								<br><br>
+								<div class="table-container">
+								<table style="width:40">
+  <tr>
+    <td><strong>Motherboard</strong></td>
+    <td><strong>Dimensions</strong></td>
+  </tr>
+  <tr>
+    <td>Pico-ITX</td>
+    <td>3.9 inch x 2.9 inch | 100mm x 72mm</td>
+  </tr>
+  <tr>
+    <td>Nano-ITX</td>
+    <td>4.7 inch x 4.7 inch | 120mm x 120mm</td>
+  </tr>
+   <tr>
+    <td>Mini-ITX</td>
+    <td>6.7 inch x 6.7 inch | 170mm x 170mm</td>
+  </tr>
+  <tr>
+    <td>Micro-ATX</td>
+    <td>9.6 inch x 9.6 inch | 244mm x 244mm</td>
+  </tr>
+   <tr>
+    <td>Standard-ATX</td>
+    <td>12 inch x 9.6 inch | 305mm x 244mm</td>
+  </tr>
+  <tr>
+    <td>XL-ATX</td>
+    <td>EVGA: 13.5 inch x 10.3 inch | 343mm x 262mm<br>Gigabyte: 13.58 inch x 10.31 inch | 345mm x 262mm<br>Micro-Star: 13.6 inch x 10.4 inch | 345mm x 264mm</td>
+  </tr>
+</table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="cpu">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>CPU (Central Processing Unit)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="cpuu.png" alt="CPU">
+                            </div>
+                            <div class="description">
+                                <strong>The CPU is the brain of the computer, responsible for executing instructions and performing calculations.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="ram">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>RAM (Random Access Memory)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="ram.png" alt="RAM">
+                            </div>
+                            <div class="description">
+                                <strong>RAM is a type of memory that stores data that the CPU needs to access quickly. It provides temporary storage for running applications and data.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="gpu">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>GPU (Graphics Processing Unit)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="gpu.png" alt="GPU">
+                            </div>
+                            <div class="description">
+                                <strong>A GPU is a specialized electronic circuit that accelerates the creation and rendering of images, video, and animations.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="sound-card">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Sound Card</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="sound-card.png" alt="Sound Card">
+                            </div>
+                            <div class="description">
+                                <strong>A sound card is an expansion card that provides audio input and output capabilities to a computer. It enables the computer to produce sound for multimedia applications.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="hdd">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>HDD (Hard Disk Drive)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="hdd.png" alt="HDD">
+                            </div>
+                            <div class="description">
+                                <strong>An HDD is a non-volatile storage device that stores and retrieves digital information using rotating rigid platters coated with a magnetic material.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="ssd">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>SSD (Solid State Drive)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="ssd.png" alt="SSD">
+                            </div>
+                            <div class="description">
+                                <strong>An SSD is a storage device that uses flash memory to store data persistently. It provides faster access times and improved performance compared to traditional HDDs.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="psu">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>PSU (Power Supply Unit)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="psu.png" alt="PSU">
+                            </div>
+                            <div class="description">
+                                <strong>The PSU supplies electrical power to the computer. It converts the AC power from the wall outlet into DC power that the computer components can use.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="monitor">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Monitor</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="monitor.png" alt="Monitor">
+                            </div>
+                            <div class="description">
+                                <strong>A monitor is an output device that displays visual information from the computer. It allows users to view images, videos, and other content.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="keyboard">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Keyboard</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="keyboard.png" alt="Keyboard">
+                            </div>
+                            <div class="description">
+                                <strong>A keyboard is an input device that allows users to enter text, commands, and other types of data into the computer.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="mouse">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Mouse</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="mouse.png" alt="Mouse">
+                            </div>
+                            <div class="description">
+                                <strong>A mouse is an input device that allows users to move the cursor on the screen and interact with graphical user interfaces.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="rom">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>ROM (read-only memory)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="rom.png" alt="ROM">
+                            </div>
+                            <div class="description">
+                                <strong>ROM is a non-volatile memory type. This means it receives data and permanently writes it on a chip, and it lasts even after you turn off your computer.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="network-card">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Network Card</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="network-card.png" alt="Network Card">
+                            </div>
+                            <div class="description">
+                                <strong>A network card, also known as a network interface card (NIC), enables a computer to connect to a network and communicate with other devices.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="optical-drive">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Optical Drive</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="optical-drive.png" alt="Optical Drive">
+                            </div>
+                            <div class="description">
+                                <strong>An optical drive is a device that uses laser technology to read and write data from optical discs such as CDs, DVDs, and Blu-ray discs.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="cpu-cooler">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>CPU Cooler</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="cpu-cooler.png" alt="CPU Cooler">
+                            </div>
+                            <div class="description">
+                                <strong>A CPU cooler is a device that helps dissipate heat generated by the CPU. It prevents the CPU from overheating and ensures stable performance.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="graphics-tablet">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Graphics Tablet</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="graphics-tablet.png" alt="Graphics Tablet">
+                            </div>
+                            <div class="description">
+                                <strong>A graphics tablet, also known as a drawing tablet, is an input device that allows users to draw, sketch, and create digital artwork directly on the tablet surface using a stylus.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="speakers">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Speakers</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="speakers.png" alt="Speakers">
+                            </div>
+                            <div class="description">
+                                <strong>Speakers are output devices that produce sound from the computer. They allow users to listen to audio, music, and multimedia content.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="webcam">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Webcam</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="webcam.png" alt="Webcam">
+                            </div>
+                            <div class="description">
+                                <strong>A webcam is a video camera that captures video and audio data. It allows users to participate in video calls, conferences, and online streaming.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+		
+		<section id="printer">
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2">
+                        <h2>Printer</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <div class="image">
+                                <img src="printer.png" alt="Printer">
+                            </div>
+                            <div class="description">
+                                <strong>A  printer is used to print documents, photos, and anything else that appears on your screen. There are many types of printers, including inkjet, laser, and photo printers. There are even all-in-one printers, which can also scan and copy documents.</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+<section id="maintenance-tips">
+            <h2>Tips for Maintaining Computer Components</h2>
+            <ul>
+                <li>Regularly clean the computer components to remove dust and debris using compressed air or a soft cloth.</li>
+                <li>Ensure proper ventilation and airflow around the computer to prevent overheating.</li>
+                <li>Keep the computer in a clean and dust-free environment.</li>
+                <li>Update drivers and firmware for optimal performance and compatibility.</li>
+                <li>Install and regularly update antivirus software to protect against malware and viruses.</li>
+                <li>Back up important data regularly to prevent data loss.</li>
+                <li>Avoid placing drinks or liquids near the computer to prevent accidental spills.</li>
+                <li>Handle computer components with care, avoiding excessive force or static discharge.</li>
+                <li>Follow manufacturer's guidelines for maintenance and cleaning of specific components.</li>
+            </ul>
+<section id="troubleshooting-tips">
+            <h2>Troubleshooting Tips</h2>
+            <ul>
+                <li>If the computer doesn't power on, check if the power cable is properly connected and if the power supply switch is turned on.</li>
+                <li>If there is no display on the monitor, ensure that the monitor is connected to the computer and powered on. Check the cable connections and try a different cable if possible.</li>
+                <li>If the computer is running slowly, close unnecessary programs and processes. Run a malware scan and ensure that the computer has sufficient memory and storage space.</li>
+                <li>If there are no sounds from the speakers, check if the volume is muted or turned down. Verify that the speakers are properly connected to the audio output of the computer.</li>
+                <li>If a peripheral device is not working, check the cable connections, ensure that the drivers are up to date, and try connecting the device to a different port.</li>
+                <li>If the computer crashes or freezes, check for overheating by monitoring the temperature. Clean any dust from the components and ensure proper airflow. Update drivers and check for software conflicts.</li>
+                <li>If the internet connection is unstable, restart the modem and router. Check the network cables and verify that the network card drivers are up to date.</li>
+                <li>If a specific program or application is not working, try reinstalling or updating the software. Check for compatibility issues with the operating system or other components.</li>
+                <li>If there are strange noises coming from the computer, check for loose cables or components. It could indicate a problem with the fan, hard drive, or other hardware.</li>
+                <li>If you encounter frequent blue screen errors, note the error message and search for possible solutions online. It could be related to hardware or software issues.</li>
+            </ul>
+<section id="product-recommendations">
+            <h2>Product Recommendations</h2>
+            <div class="product">
+                <h3>Gaming Rig</h3>
+                <ul>
+                    <li>Processor: Intel Core i7-11700K</li>
+                    <li>Graphics Card: NVIDIA GeForce RTX 3080</li>
+                    <li>Memory: 16GB DDR4 RAM</li>
+                    <li>Storage: 1TB NVMe SSD</li>
+                    <li>Motherboard: ASUS ROG Strix Z590-E</li>
+                    <li>Power Supply: Corsair RM750x</li>
+                    <li>Case: NZXT H710i</li>
+                </ul>
+            </div>
+            <div class="product">
+                <h3>Home Office System</h3>
+                <ul>
+                    <li>Processor: AMD Ryzen 5 5600X</li>
+                    <li>Integrated Graphics: AMD Radeon RX Vega 7</li>
+                    <li>Memory: 8GB DDR4 RAM</li>
+                    <li>Storage: 512GB NVMe SSD</li>
+                    <li>Motherboard: MSI B450 Tomahawk</li>
+                    <li>Power Supply: EVGA 500 W1</li>
+                    <li>Case: Fractal Design Define R6</li>
+                </ul>
+            </div>
+            <div class="product">
+                <h3>Media Editing Workstation</h3>
+                <ul>
+                    <li>Processor: AMD Ryzen 9 5900X</li>
+                    <li>Graphics Card: NVIDIA GeForce RTX 3090</li>
+                    <li>Memory: 32GB DDR4 RAM</li>
+                    <li>Storage: 2TB NVMe SSD</li>
+                    <li>Motherboard: ASUS ProArt X570-Creator</li>
+                    <li>Power Supply: Seasonic Focus Plus 850 Platinum</li>
+                    <li>Case: Cooler Master MasterCase H500</li>
+                </ul>
+<section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, suggestions, or feedback, feel free to reach out to us.</p>
+            <div class="contact-info">
+                <p>Email: dash4simpleweb.com</p>
+                <p>Phone: +639 5056 543 05</p>
+                <p>Address: 653 Tamaraw Heights, Marulas Valenzuela City Philippines </p>
+            </div>			
+        </section>
+</main>
+<footer>
+<p>© 2023 Your Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
